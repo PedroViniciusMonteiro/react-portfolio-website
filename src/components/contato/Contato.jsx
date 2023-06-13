@@ -1,7 +1,7 @@
 import React from 'react'
 import './contato.css'
 import { MdOutlineEmail } from 'react-icons/md'
-import { RiMessengerLine } from 'react-icons/ri'
+import { BsInstagram } from 'react-icons/bs'
 import { BsWhatsapp } from 'react-icons/bs'
 import {useRef} from 'react'
 import emailjs from 'emailjs-com'
@@ -23,19 +23,19 @@ const Contato = () => {
             <MdOutlineEmail className='contato__option-icon'/>
             <h4>Email</h4>
             <h5>pedro.vmonteiro@yahoo.com</h5>
-            <a href="mailto:pedro.vmonteiro@yahoo.com" target='_blank'>Enviar mensagem</a>
+            <a href="mailto:pedro.vmonteiro@yahoo.com" target='_blank' rel='noreferrer noopener'>Enviar mensagem</a>
           </article>
           <article className="contato__option">
-            <RiMessengerLine className='contato__option-icon'/>
-            <h4>Messenger</h4>
+            <BsInstagram className='contato__option-icon'/>
+            <h4>Instagram</h4>
             <h5>Pedro Monteiro</h5>
-            <a href="https://m.me/pedro.monteiro" target='_blank'>Enviar mensagem</a>
+            <a href="https://instagram.com/pdrking1" target='_blank' rel='noreferrer noopener'>Enviar mensagem</a>
           </article>
           <article className="contato__option">
             <BsWhatsapp className='contato__option-icon'/>
             <h4>Whatsapp</h4>
             <h5>+17997896720</h5>
-            <a href="https://api.whatsapp.com/send?phone+17997896720" target='_blank'>Enviar mensagem</a>
+            <a href="https://api.whatsapp.com/send?phone+17997896720" target='_blank' rel='noreferrer noopener'>Enviar mensagem</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>

@@ -1,16 +1,16 @@
 import React from 'react'
 import './footer.css'
-import { FaFacebookF } from 'react-icons/fa'
-import { FiInstagram } from 'react-icons/fi'
-import { IoLogoTwitter } from 'react-icons/io'
+import {FaGithub} from 'react-icons/fa'
+import { BsLinkedin } from 'react-icons/bs'
+import {BsInstagram} from 'react-icons/bs'
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>PEDRO MONTEIRO</a>
+      <a href="#home" className='footer__logo'>PEDRO MONTEIRO</a>
       <ul className='permalinks'>
 
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#servicos">Serviços</a></li>
@@ -20,9 +20,9 @@ const Footer = () => {
 
       </ul>
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF /></a>
-        <a href="https://instagram.com"><FiInstagram /></a>
-        <a href="https:/twitter.com"><IoLogoTwitter /></a>
+        <a href="https://www.linkedin.com/in/pedro-monteiro-3323b4207/"><BsLinkedin /></a>
+        <a href="https://github.com/PedroViniciusMonteiro" ><FaGithub /></a>
+        <a href="https://instagram.com/pdrking1"><BsInstagram /></a>
       </div>
       <div className="footer__copyrigth">
         <small>&copy; Pedro Monteiro. Todos direitos reservados. </small>
