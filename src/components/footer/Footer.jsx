@@ -4,13 +4,17 @@ import {FaGithub} from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
 import {BsInstagram} from 'react-icons/bs'
 
+import { useState } from 'react'
+
+
 const Footer = () => {
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <footer>
-      <a href="#home" className='footer__logo'>PEDRO MONTEIRO</a>
+      <a href="#" className='footer__logo'>PEDRO MONTEIRO</a>
       <ul className='permalinks'>
 
-        <li><a href="#home">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#servicos">Serviços</a></li>
